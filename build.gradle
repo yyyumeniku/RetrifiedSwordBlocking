@@ -20,9 +20,9 @@ if (project.hasProperty('forge.gradle.no_version_check')) {
     project.ext.set('forge.gradle.no_version_check', true)
 }
 
-version = rootProject.mod_version
-group = rootProject.maven_group
-archivesBaseName = "SwordBlock"
+version = "0.1"
+group = "com.sword.block"
+archivesBaseName = "RetrifiedSwordBlocking"
 
 sourceCompatibility = targetCompatibility = '1.8'
 compileJava {
