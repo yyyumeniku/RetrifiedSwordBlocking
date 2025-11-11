@@ -70,12 +70,6 @@ processResources {
 }
 
 jar {
-    from(configurations.provided.collect {
-        it.isDirectory() ? it : zipTree(it)
-    }) {
-        exclude "LICENSE.txt", "META-INF/MANIFSET.MF", "META-INF/maven/**", "META-INF/*.RSA", "META-INF/*.SF"
-    }
-
     manifest {
         attributes "FMLCorePlugin": mod_core_plugin
         attributes "FMLCorePluginContainsFMLMod": "true"
