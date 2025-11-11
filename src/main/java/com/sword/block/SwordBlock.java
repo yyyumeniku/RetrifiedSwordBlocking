@@ -1,5 +1,6 @@
 package com.sword.block;
 
+import com.sword.block.config.ConfigHandler;
 import com.sword.block.proxy.CommonProxy;
 import net.minecraft.item.EnumAction;
 import net.minecraftforge.common.util.EnumHelper;
@@ -19,7 +20,7 @@ public class SwordBlock {
 
     public static final String NAME = "Sword Block";
 
-    public static final String VERSION = "1.0.6";
+    public static final String VERSION = "1.1.0";
 
     public static final Logger LOGGER = LogManager.getLogger(MODID);
 
@@ -31,6 +32,7 @@ public class SwordBlock {
 
     @EventHandler
     public void preInit(final FMLPreInitializationEvent event) {
+        ConfigHandler.init(event.getSuggestedConfigurationFile());
         proxy.preInit(event);
     }
 

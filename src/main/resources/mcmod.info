@@ -1,15 +1,15 @@
 [
   {
     "modid": "sword_block",
-    "name": "Classic Sword Blocking",
-    "description": "This mod adds the ability of blocking with a sword.",
+    "name": "Retroified Sword Blocking",
+    "description": "Brings back pre-1.9 sword blocking for ALL swords, including vanilla, Tinkers' Construct, and other modded swords. Features comprehensive sword detection and configuration options.",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "https://www.curseforge.com/minecraft/mc-mods/classic-sword-blocking",
+    "url": "",
     "updateUrl": "",
-    "authorList": ["ji_GGO"],
-    "credits": "",
-    "logoFile": "icon.png",
+    "authorList": ["yyyumeniku"],
+    "credits": "Original concept by ji_GGO's Classic Sword Blocking mod",
+    "logoFile": "",
     "screenshots": [],
     "dependencies": []
   }

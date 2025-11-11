@@ -1,23 +1,48 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+classes/
 
-# idea
-out
+# IDE
+.idea/
+*.iml
 *.ipr
 *.iws
-*.iml
-.idea
+.vscode/
 
-# gradle
-build
-.gradle
-classes
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.classpath
+*.launch
 
-# other
-eclipse
-run
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Minecraft
+run/
+logs/
+crash-reports/
+eclipse/
+
+# Other
+*.log
+out/
