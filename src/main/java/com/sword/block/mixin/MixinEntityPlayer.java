@@ -24,8 +24,8 @@ public abstract class MixinEntityPlayer extends EntityLivingBase {
     @Redirect(at = @At(value = "INVOKE", target = "Lnet/minecraftforge/common/ISpecialArmor$ArmorProperties;applyArmor(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/util/NonNullList;Lnet/minecraft/util/DamageSource;D)F"), method = "damageEntity(Lnet/minecraft/util/DamageSource;F)V")
     private float onSwordBlocking(EntityLivingBase entity, NonNullList<ItemStack> inventory, DamageSource source, double damage) {
         if (!source.isUnblockable() && isBlocking() && damage > 0.0D) {
-            // Simple 50% damage reduction like classic sword blocking
-            damage = (1.0D + damage) * 0.5D;
+            // Block 50% of damage (player takes only 50% of original damage)
+            damage = damage * 0.5D;
         }
         return ISpecialArmor.ArmorProperties.applyArmor(entity, inventory, source, damage);
     }
